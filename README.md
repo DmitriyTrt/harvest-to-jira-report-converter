@@ -4,7 +4,7 @@ A tool that converts CSV reports produced by Harvest into timesheet CSV files ac
 
 ## Setup
 
-It's best to uses Volta for Node version management. Install everything:
+It's best to use Volta for Node version management. Install everything:
 ```shell
 npm i
 ```
