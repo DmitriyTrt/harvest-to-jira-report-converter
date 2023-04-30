@@ -1,0 +1,8 @@
+{
+  "prefixes": [
+    "AA",
+    "BB"
+  ],
+  "input": "csv/input/*.csv",
+  "output": "csv/output"
+}
