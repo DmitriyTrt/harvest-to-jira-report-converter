@@ -1,0 +1,20 @@
+{
+  "name": "harvest-to-jira-report-converter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "convert": "npx tsc && node dist/convert.js"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^2.0.0",
+    "@types/node": "^18.16.3",
+    "typescript": "^5.0.4"
+  },
+  "volta": {
+    "node": "18.16.0"
+  },
+  "dependencies": {
+    "csv": "^6.2.10",
+    "glob": "^10.2.2"
+  }
+}

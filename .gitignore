@@ -1,0 +1,12 @@
+/csv/input/*
+/csv/output/*
+!/csv/input/.gitkeep
+!/csv/output/.gitkeep
+
+/dist/*
+!/dist/.gitkeep
+
+src/config.json
+
+/.idea
+/node_modules
