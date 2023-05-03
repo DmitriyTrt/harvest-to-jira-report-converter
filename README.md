@@ -25,6 +25,16 @@ Specify task prefixes. For example, with the following config, tasks `AA-123` an
 }
 ```
 
+## Log your time to Harvest
+
+With the above config, all the time entries must have the following format to be included in the final report:
+```
+AA-999: What was done
+ bb-99999 : Some description
+```
+
+Spaces around a task ID are ignored.
+
 ## Prepare the file
 
 * Open Harvest
