@@ -12,7 +12,7 @@ export const columns = [
 const transformerFactory = (config: Config) => {
   const prefixes = config.prefixes.join('|');
   const taskIdPattern = `(?<task>(?:${prefixes})\\-\\d+)`
-  const noteRegexp = new RegExp(`^\\s*${taskIdPattern}\\:\\s*(?<notes>.*)$`);
+  const noteRegexp = new RegExp(`^\\s*${taskIdPattern}\\s*\\:\\s*(?<notes>.*)$`, 'i');
 
   return new Transform({
     objectMode: true,
@@ -31,7 +31,7 @@ const transformerFactory = (config: Config) => {
         const matches = noteRegexp.exec(notes);
         if (matches) {
           this.push({
-            "Issue Key": matches.groups?.task,
+            "Issue Key": matches.groups?.task.toUpperCase(),
             "Date Started": date,
             "Time Spent": `${hours}h`,
             Comment: matches.groups?.notes
