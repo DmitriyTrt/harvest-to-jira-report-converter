@@ -14,7 +14,7 @@ Create a config file:
 cp src/config.example.json src/config.json
 ```
 
-Specify task prefixes. For example, with the following config, tasks `AA-123` and `BB-345` would be included in the final report:
+Specify the project prefixes (the part before the `-` dash in a task ID):
 ```
 {
   "prefixes": [
@@ -48,3 +48,4 @@ Spaces around a task ID are ignored.
 
 * Execute `npm run convert`
 * Find the file in the `csv/output` folder. It should have the same file name as the input one.
+* Upload the timesheet into Jira.
